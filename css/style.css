@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Dosis', sans-serif;
+}
+.container{
+    width: 80%;
+    margin:  auto;
+}
+header{
+    /* height: 90px; */
+    padding: 10px 0 ;
+    background-color: #333;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul#user_info {
+    display: none;
+    align-items: center;
+}
+nav ul#user_info .carts-products{
+    position: absolute;
+    width: 200px;
+    transform: translate(-42%,0);
+    background: #eeeeee;
+    top: 45px;
+    padding: 10px;
+    border: 1px solid green;
+    display: none;
+}
+nav ul#user_info .carts-products a{
+    text-align: center;
+    display: block;
+    color: #fff;
+    background: darkgreen;
+    margin: 0;
+    padding: 6;
+    text-decoration: none;
+
+}
+
+nav ul#user_info li{
+    position: relative;
+    margin: 0 7px;
+}
+nav ul#user_info li i{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+nav ul#user_info li  .badge{
+    width: 20px;
+    height: 20px;
+    background:red;
+    display: block;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: -9px;
+    right: -11px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    display: none;
+}
+nav ul li a {
+    display: block;
+    color:#fff;
+    min-width: 50px;
+    padding: 5px;
+    margin: 0 5px;
+    /* background-color: #08f; */
+}
+
+
+/* form section ****************/
+
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    text-align: center;
+    background-color: #bc6ff1;
+    padding: 20px;
+}
+.section-form h2{
+    font-size: 50px;
+    color:#52057b;
+    letter-spacing: 2px;
+}
+
+.section-form form input{
+    display: block;
+    width: 100%;
+    margin:  5px 0;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    font-family: 'Dosis', sans-serif;
+    outline: 0;
+
+}
+.section-form form input[type=submit]{
+    font-size: 25px;
+    text-transform: uppercase;
+    height:auto;
+    cursor: pointer;
+}
+#search{
+    width: 100%;
+    display: block;
+    border: 1px solid #b5b5b5;
+    height: 40px;
+    margin:  10px 0 ;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+
+}
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.products{
+    width: 60%;
+    margin: 10px 0;
+}
+.product-item{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    min-height: 150px;
+}
+.product-item-image{
+    width: 25%;
+    margin-right: 10px;
+}
+.product-item-desc a{
+    font-size: 25px;
+    color: black;
+    display: block;
+    cursor: pointer;
+}
+.product-item-actions{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item-actions .add-to-cart{
+    display: block;
+    margin-left: auto;
+    background: darkgreen;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+}
+.product-item-actions .favorite{
+    cursor: pointer;
+    display: block;
+    width: 20px;
+    margin-left: auto;
+
+}
+.item-details img{
+    width: 100%;
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 2px;
+    height: 400px;
+    object-fit: cover;
+}
